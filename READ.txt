@@ -1,0 +1,9 @@
+# Définir les noms des dossiers dans une variable
+$groupNames = 
+"Achats","Direction","Finances","RH","Ventes""Responsable","Comptable","Acheteur","Secrétaire","Directeur","Directeur d'achat","Directeur ventes","Agent d'accueil","Assistante","Standardiste","Secrétaire direction","Contrôleur","Secrétaire","Gestionnaire","Reponsable","Secrétaire","Commercial","Directeur","Secrétaire"
+
+# Parcourir chaque nom de dossier et créer un dossier avec ce nom
+foreach ($groupName in $groupNames) {
+    New-Item -ItemType Directory -Path "C:\chemin\vers\le\dossier\$groupName"
+}
+
